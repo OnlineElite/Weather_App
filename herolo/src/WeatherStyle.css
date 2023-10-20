@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    padding-inline: 2.5rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.Link{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.Link_logo{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.form-inline ul{
+    display: flex;
+}
+
+.form-inline li {
+    margin-inline: 1rem;
+    list-style: none;
+}
+
+/*-------------------*/
+.cont{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: lightblue;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: lightblue;
+    margin: auto;
+    padding-block: 2rem;
+}
+
+.main .formi{
+    width: 45%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+
+.main .formi input{
+    width: 90%;
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.main .formi button{
+    width:10% ;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: none;
+    border-left: 2px solid white;
+}
+
+.main .formi input:active{
+    border: none;
+    outline: none;
+}
+
+.display{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-block: 2rem;
+    padding: 1.5rem;
+    min-height: 400px;
+}
+
+.left .info .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info{
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logoWeather{
+    width: fit-content;
+    height:fit-content;
+}
+
+.logoWeather .icon {
+    font-size: 80px;
+}
+
+.info{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.display h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-block: 2rem;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right button{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.right .icon2{
+    font-size: 20px;
+}
+
+.added{
+    color: red;
+}
+
+.nextDaysCards{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    min-width: fit-content;
+    min-height: fit-content;
+    background-color: rgb(3, 3, 53);
+    color: white;
+    margin: 2px;
+    border: 2px solid yellow;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 8px;
+}
+
+.favory{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.like{
+    color: red;
+}
+
+.max {
+    color: red;
+}
+
+.min {
+    color: orange;
+}
+
+.weather_status{
+    color: yellow;
+    width: 100%;
+    text-align: center;
+}
+.day{
+    color: rgb(10, 252, 10);
+    width: 100%;
+    text-align: center;
+}

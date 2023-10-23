@@ -42,7 +42,7 @@ const addFavories = (data) =>{
 const weatherForecastThunk = (value) => (dispatch)=>{
     console.log('asngfhgfhgasd', value)
     const API_Key = 'wCm3m5OA5VstnJDfSjcXUPP7lAKlNv7S'   //old :'lJG10Gw0RHA4bzBzipAGZ5fA5lGjA9ZE'
-    const LOCATION_API = `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?q=${value}&apikey=${API_Key}&language=en-us`
+    const LOCATION_API = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?q=${value}&apikey=${API_Key}&language=en-us`
     
     try{
         fetch(LOCATION_API)
@@ -53,14 +53,14 @@ const weatherForecastThunk = (value) => (dispatch)=>{
             console.log('first fetch city name:', response[0].LocalizedName)
             console.log('first fetch city name:', response[0].Key)
             dispatch(updateCityNmae(response[0].LocalizedName))
-            fetch(`http://dataservice.accuweather.com/currentconditions/v1/${response[0].Key}?apikey=${API_Key}&language=en-us`)
+            fetch(`https://dataservice.accuweather.com/currentconditions/v1/${response[0].Key}?apikey=${API_Key}&language=en-us`)
                 .then((res)=>{
                     return res.json()
                 })
                 .then((data)=>{
                     console.log('second fetch Temperateur :', data[0].Temperature.Metric.Value)
                     dispatch(updateTemperateur(data[0].Temperature.Metric.Value))
-                    fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${response[0].Key}?apikey=${API_Key}&language=en-us`)
+                    fetch(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${response[0].Key}?apikey=${API_Key}&language=en-us`)
                         .then((res)=>{
                             return res.json()
                         })
